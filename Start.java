@@ -1,6 +1,8 @@
 public class Start {
 
     static int b = 2;
+    static String c = "Hallo"; 
+
     public static void main(String[] args) {
         System.out.println("Start");
 
@@ -27,6 +29,18 @@ public class Start {
         u2.setMitarbeiter(m2);
         System.out.println(u2.getMitarbeiter(1));
         System.out.println(m2.getUnternehmen());
+
+        System.out.println(c.contains("a"));
+
+        Quadrat q1 = new Quadrat(5);
+        q1.print();
+        q1.setSeitenlaenge(10);
+        q1.print();
+        System.out.println(q1.berechneDiagonale());
+        System.out.println(q1.berechneUmfang());
+        System.out.println(q1.berechneFlaeche());
+        System.out.println(q1.berechneWinkel());
+        System.out.println(q1.getSeitenlaenge());
 
         System.out.println("Ende");
     }
